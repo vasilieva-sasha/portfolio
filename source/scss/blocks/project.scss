@@ -1,0 +1,42 @@
+.project {
+  padding: 15px;
+}
+
+.project--full {
+  position: relative;
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.project--full > .project__image {
+  opacity: 1;
+}
+
+.project__image {
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.project__about {
+  font-size: 10px;
+}
+
+.project__about--technology {
+  font-size: 8px;
+
+  &::before {
+    content: "";
+  }
+}
+
+.project__info--hide {
+  display: none;
+}
+
+.project__technology-list {
+  list-style: disc;
+  font-size: 10px;
+}

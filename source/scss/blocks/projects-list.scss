@@ -1,0 +1,9 @@
+.projects-list {
+  margin: 50px 10%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.projects-list__item {
+  list-style: none;
+}

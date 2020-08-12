@@ -1,0 +1,10 @@
+.skills-list {
+  margin: 50px 10%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+}
+
+.skills-list__item {
+  list-style: none;
+}

@@ -1,0 +1,10 @@
+.skill {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 15px 30px;
+}
+
+.skill__header {
+  display: block;
+  padding: 20px 0;
+}

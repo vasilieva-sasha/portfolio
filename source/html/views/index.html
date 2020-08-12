@@ -3,19 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML5 webpack boilerplate</title>
-    <link rel="stylesheet" href="/vendors/normalize-css/normalize.min.css" />
+    <title>Vasilieva Aleksandra Portfolio</title>
   </head>
   <body>
-    <!--header.html-->
-    <%= _.template(require('../includes/header.html').default)({}) %>
-    <main>
-      <!--index/hero.html-->
-      <%= _.template(require('../includes/index/hero.html').default)({}) %>
-      <!--index/structure.html-->
-      <%= _.template(require('../includes/index/structure.html').default)({}) %>
+    <header class="page-header"><a  class="page-header__download">скачать резюме</a></header>
+    <main class="page-main">
+      <h1 class="page-main__hedaer visually-hidden">Портфолио Васильевой Александры</h1>
+      <section class="main-greeting">
+        <h2 class="main-greeting__header visually-hidden">Приветствие</h2>
+        <p class="main-greeting__text">Добро пожаловать! Меня зовут Александра Васильева и я фронтенд-разработчик.</p>
+      </section>
+
+      <section class="main-skills">
+        <h2 class="main-skills__header header">Мои навыки</h2>
+        <ul class="main-skills__list skills-list">
+          <li class="skills-list__item skill">
+            <img class="skill__image" src="../../img/icons8-html5.svg">
+            <span class="skill__header">HTML5</span>
+          </li>
+          <li class="skills-list__item skill">
+            <img class="skill__image" src="../../img/icons8-css3.svg">
+            <span class="skill__header">CSS3</span>
+          </li>
+          <li class="skills-list__item skill">
+            <img class="skill__image" src="../../img/icons8-sass.svg">
+            <span class="skill__header">SASS</span>
+          </li>
+          <li class="skills-list__item skill">
+            <img class="skill__image" src="../../img/icons8-gulp.svg">
+            <span class="skill__header">Gulp</span>
+          </li>
+          <li class="skills-list__item skill">
+            <img class="skill__image" src="../../img/icons8-javascript.svg">
+            <span class="skill__header">JavaScript ES6</span>
+          </li>
+          <li class="skills-list__item skill">
+            <img class="skill__image" src="../../img/icons8-react.svg">
+            <span class="skill__header">React</span>
+          </li>
+          <li class="skills-list__item skill">
+            <img class="skill__image" src="../../img/icons8-typescript.svg">
+            <span class="skill__header">TypeScript</span>
+          </li>
+          <li class="skills-list__item skill">
+            <img class="skill__image" src="../../img/icons8-webpack.svg">
+            <span class="skill__header">WebPack</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-projects">
+        <h2 class="main-projects__header header">Мои работы</h2>
+        <ul class="main-projects__list projects-list">
+          <li class="projects-list__item project">
+            <h3 class="project__header header--small">Что посмотреть</h3>
+            <img class="project__image" src="../../img/wtw.jpg">
+            <div class="project__info project__info--hide">
+              <ul class="project__technology-list">
+                <li class="project__technology-item">ReactJs</li>
+                <li class="project__technology-item">Redux</li>
+                <li class="project__technology-item">TypeScript</li>
+                <li class="project__technology-item">Jest</li>
+              </ul>
+              <p class="project__about">Онлайн-кинотеатр, в котором можно посмотреть информацию о фильме, почитать комментарии, оставить свой отзыв, а так же посмотреть фильм.
+                На сайте реализована простая авторизация. Авторизованные пользователи могут добавлять фильмы в список к просмотру. Основной список фильмов можно фильтровать по жанрам. Так же по наведении на элемент списка, начинается проигрывание трейлера.
+                <span class="project__about--technology">Проект был написан на ReactJs, типизирован с помощью TypeScript, а так же каждый компонент тестируется с помошью снепшот-тестов и юнит-тестов.</span>
+              </p>
+            </div>
+          </li>
+          <li class="projects-list__item project">
+            <h3 class="project__header header--small">Киноман</h3>
+            <img class="project__image" src="../../img/cinemaddict-v10.png">
+            <div class="project__info project__info--hide">
+              <ul class="project__technology-list">
+                <li class="project__technology-item">JavaScript ES6</li>
+                <li class="project__technology-item">WebPack</li>
+              </ul>
+              <p class="project__about">Интернет-сервис о кино, в котором можно добавлять фильмы к просмотру, писать отзывы и ставить оценки. Осуществлена фильтрация по спискам, а так же сортировка по дате и рейтингу. Так же отрисовывается статистика пользователя по просмотренным фильмам.
+                <span class="project__about--technology">Проект был написан на JavaScript ES6 с использованием принципов объектно-ориентированного программирования. Сборка с помощью </span>
+              </p>
+            </div>
+          </li>
+          <li class="projects-list__item project">
+            <h3 class="project__header header--small">Кексобукинг</h3>
+            <img class="project__image" src="../../img/keksobooking.jpg">
+            <div class="project__info project__info--hide">
+              <ul class="project__technology-list">
+                <li class="project__technology-item">JavaScript ES5</li>
+              </ul>
+              <p class="project__about">Сервис по поиску жилья в Токио. Реализована фильтрация по типу жилья, цене и т.д. Так же возможно добавить на карту свое объявление.
+                <span class="project__about--technology">Проект был написан на JavaScript ES5</span>
+              </p>
+            </div>
+          </li>
+          <li class="projects-list__item project">
+            <h3 class="project__header header--small">Мишка</h3>
+            <img class="project__image" src="../../img/mishka-index-desktop.png">
+            <div class="project__info project__info--hide">
+              <ul class="project__technology-list">
+                <li class="project__technology-item">HTML5</li>
+                <li class="project__technology-item">SASS</li>
+                <li class="project__technology-item">GULP</li>
+              </ul>
+              <p class="project__about">Онлайн-магазин вязаных игрушек. Выполнен в трех разрешениях: мобильная версия, планшетная и десктопная.
+                <span class="project__about--technology">Проект был написан на с использваонием методологии БЭМ, препроцессора SCSS. Сборка с помощью GULP. Mobile-first.</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
-    <!--footer.html-->
-    <%= _.template(require('../includes/footer.html').default)({}) %>
+
+    <footer class="page-footer">
+      <ul class="page-footer__contacts contacts-list">
+        <li class="contacts-list__item">
+          <h4 class="visually-hidden">github</h4>
+          <a href=""><img src="../../img/icons8-github.svg"></a>
+        </li>
+        <li class="contacts-list__item">
+          <h3 class="visually-hidden">mail</h3>
+          <a><img src="../../img/mail.svg"></a>
+        </li>
+        <li class="contacts-list__item">
+          <h3 class="visually-hidden">telegram</h3>
+          <a><img src="../../img/icons8-telegram-app.svg"></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

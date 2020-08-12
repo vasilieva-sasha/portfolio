@@ -11,11 +11,6 @@
     "prettier": "prettier --write '@(source)/{scss,js}/**/*.@(scss|css|js|json)'",
     "start": "webpack-dev-server --open"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && npm run test"
-    }
-  },
   "lint-staged": {
     "./*.{js}": [
       "prettier --write",
@@ -45,7 +40,6 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
     "html-webpack-plugin": "^4.3.0",
-    "husky": "^4.2.5",
     "imagemin-webp-webpack-plugin": "3.3.2",
     "imagemin-webpack-plugin": "2.4.2",
     "lint-staged": "^10.2.11",
