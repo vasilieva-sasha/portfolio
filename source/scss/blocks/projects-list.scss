@@ -1,9 +1,23 @@
 .projects-list {
-  margin: 50px 10%;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  padding: 10%;
 }
 
 .projects-list__item {
   list-style: none;
+}
+
+@media (min-width: $md) {
+  .projects-list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: $xl) {
+  .projects-list {
+    margin: 50px 10%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
 }

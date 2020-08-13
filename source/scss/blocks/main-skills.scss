@@ -1,5 +1,10 @@
 .main-skills {
   background-color: $bg-color;
-  padding: 50px 0 0;
-  height: 500px;
+  padding: 50px 0;
+}
+
+@media (min-width: $xl) {
+  .main-skills {
+    padding: 50px;
+  }
 }

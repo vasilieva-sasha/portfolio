@@ -1,8 +1,8 @@
 .main-greeting {
-  height: 800px;
+  height: 500px;
   background-image: url("../../img/artem-sapegin-DErxVSSQNdM-unsplash.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center;
   background-color: $bg-color;
 }
@@ -13,10 +13,32 @@
   width: 100%;
   height: 100%;
   background: rgba($white, 0.5);
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 50px;
   margin: 0 auto;
-  padding: 340px 15% 0;
+  padding: 180px 15px 0;
   text-align: center;
+}
+
+@media (min-width: $md) {
+  .main-greeting__text {
+    padding: 180px 25px 0;
+  }
+}
+
+@media (min-width: $xl) {
+  .main-greeting {
+    height: 800px;
+    background-size: auto 100%;
+  }
+
+  .main-greeting__text {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 0 auto;
+    padding: 340px 15% 0;
+    text-align: center;
+  }
 }
