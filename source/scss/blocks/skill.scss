@@ -6,7 +6,7 @@
 
 .skill__header {
   display: block;
-  padding: 20px 0;
+  padding: 5% 10%;
 }
 
 @media (min-width: $xl) {
@@ -14,5 +14,10 @@
     display: grid;
     grid-template-columns: 30% 70%;
     margin: 15px 30px;
+  }
+
+  .skill__header {
+    display: block;
+    padding: 20px 0;
   }
 }
